@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="Home" class="font-bold text-lg text-ijo block py-6">Portofolio</a>
+                    <a href="#Home" class="font-bold text-lg text-ijo block py-6">Portofolio</a>
                 </div>
                 <div class="flex items-center  px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -27,22 +27,34 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <UL class="block lg:flex">
                             <li class="group">
-                                <a href="#Home" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo ">Beranda</a>
+                                <a href="#Home" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white ">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo">Tentang Saya</a>
+                                <a href="#about" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#Portofolio" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo">portofolio</a>
+                                <a href="#Portofolio" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white">portofolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo">Cliets</a>
+                                <a href="#clients" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white">Cliets</a>
                             </li>
                             <li class="group">
-                                <a href="#Blog" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo">Blog</a>
+                                <a href="#blog" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white">Blog</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo">contact</a>
+                                <a href="#contact" class="text-base text-black py-2 mx-8 flex group-hover:text-ijo dark:text-white">contact</a>
+                            </li>
+                            <li class="flex items-center pl-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                </div>
                             </li>
                         </UL>
                     </nav>
@@ -53,18 +65,18 @@
     <!--nav-->
 
     <!--hero section-->
-    <section id="Home" class="pt-36">
+    <section id="Home" class="pt-36 dark:bg-slate-800">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-ijo md:text-xl">Halo semua 👋, saya <span class="block font-bold text-sky-900 text-4xl mt-1 lg:text-5xl"> Ilham Naraya</span></h1>
-                    <h2 class="font-medium text-abu text-lg mb-5 lg:text-2xl">teknisi & <span class="text-slate-800"> hardwere spesialis</span></h2>
-                    <p class="font-medium text-abu mb-10 leading-relaxed">belajar progaming itu sangat menyenagkan <span class="text-black font-bold"> bukan!</span></p>
-                    <a href="#" class="text-base font-semibold text-white bg-ijo py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                    <h1 class="text-base font-semibold text-ijo md:text-xl">Halo semua 👋, saya <span class="block font-bold text-sky-900 text-4xl mt-1 lg:text-5xl dark:text-white"> Ilham Naraya</span></h1>
+                    <h2 class="font-medium text-abu text-lg mb-5 lg:text-2xl">teknisi & <span class="text-slate-800 dark:text-white"> hardwere spesialis</span></h2>
+                    <p class="font-medium text-abu mb-10 leading-relaxed">belajar progaming itu sangat menyenagkan <span class="text-black font-bold dark:text-white"> bukan!</span></p>
+                    <a href="#contact" class="text-base font-semibold text-white bg-ijo py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="img/1.png" alt="Ilham Naraya" class="max-w-full mx-auto" />
+                        <img src="img/1.png" alt="Ilham Naraya" class="max-w-full mx-auto rounded" />
                         <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path fill="#08BDBA" d="M36,-59.4C45.4,-49.9,50.8,-37.8,56.1,-25.8C61.3,-13.7,66.4,-1.7,69.1,13.1C71.9,27.9,72.5,45.6,63.6,54.1C54.7,62.5,36.3,61.7,21.5,59.8C6.8,58,-4.3,55.1,-17.1,53.5C-29.8,51.8,-44.3,51.4,-57.1,44.9C-69.9,38.4,-81,25.8,-79.1,13.7C-77.2,1.6,-62.4,-10.1,-53.3,-22C-44.2,-34,-40.9,-46.2,-33,-56.3C-25.1,-66.4,-12.5,-74.3,0.4,-74.9C13.3,-75.5,26.6,-68.8,36,-59.4Z" transform="translate(100 100) scale(1.1)" 
@@ -124,7 +136,7 @@
     <!--about end-->
 
     <!--Portofolio-->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="Portofolio" class="pt-36 pb-16 bg-slate-100">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -224,7 +236,7 @@
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/360x200?mouse+gaming" alt="mouse gaming" class="w-full" />
                         <div class="py-8 px-6">
-                            <h3 class="">
+                            <h3 id="mouse">
                                 <a href="#" class="block mb-3 font-semibold text-xl text-black hover:text-ijo truncate">mouse gaming terbaru</a></h3>
                             <p class="font-medium text-base text-abu mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, error!</p>
                             <a href="#" class="font-medium text-sm text-white bg-ijo py-2 px-4 rounded-lg hover:opacity-80">Baca selengkapnya</a>
@@ -235,7 +247,7 @@
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/360x200?laptop+gaming" alt="laptop gaming" class="w-full" />
                         <div class="py-8 px-6">
-                            <h3 class="">
+                            <h3 class="laptop">
                                 <a href="#" class="block mb-3 font-semibold text-xl text-black hover:text-ijo truncate">laptop gaming terbaru</a>
                             </h3>
                             <p class="font-medium text-base text-abu mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, error!</p>
@@ -247,7 +259,7 @@
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/360x200?progaming" alt="progaming" class="w-full" />
                         <div class="py-8 px-6">
-                            <h3 class="">
+                            <h3 id="progaming">
                                 <a href="#" class="block mb-3 font-semibold text-xl text-black hover:text-ijo truncate">tips belajar progaming</a></h3>
                             <p class="font-medium text-base text-abu mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, error!</p>
                             <a href="#" class="font-medium text-sm text-white bg-ijo py-2 px-4 rounded-lg hover:opacity-80">Baca selengkapnya</a>
@@ -307,13 +319,13 @@
                     <h3 class="font-semibold text-xl text-white mb-5">Kategori tulisan</h3>
                     <ul class="text-slate-300">
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-ijo mb-3">Progaming</a>
+                            <a href="#mouse" class="inline-block text-base hover:text-ijo mb-3">mouse</a>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-ijo mb-3">mouse gaming</a>
+                            <a href="#laptop" class="inline-block text-base hover:text-ijo mb-3">laptop</a>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-ijo mb-3">laptop gaming</a>
+                            <a href="#progaming" class="inline-block text-base hover:text-ijo mb-3">progaming</a>
                         </li>
                     </ul>
                 </div>
@@ -377,6 +389,12 @@
         </div>
     </footer>
     <!--footer-->
+
+    <!--balik atas-->
+    <a href="#Home" class="fixed hidden justify-center items-center z-[9999] right-4 bottom-4 p-4 h-14 w-14 bg-ijo rounded-full hover:animate-pulse" id="to-top">
+        <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!--balik atas-->
 
     <script src="js/script.js"></script>
 </body>
