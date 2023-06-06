@@ -42,4 +42,4 @@ darkToggle.addEventListener('click', function() {
     } else {
         html.classList.remove('dark');
     }
-})
+});
